@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digala</title>
+  <link rel="icon" type="image/png" href="Asset/Icon_digala.png">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class', 
+      theme: {
+        container: {
+          center: true,
+          padding: '16px',
+        },
+        extend: {
+          colors: {
+            primary: '#b91c1c',
+            dark: '#0f172a'
+          },
+          spacing: {
+            '17': '73px',
+            '30': '120px',
+          },
+          screens: {
+            '2xl': '1320px'
+          },
+        },
+      },
+      plugins: [],
+    }
+  </script>
+</head>
+
+<body class="font-[Sanserif]">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 z-10 flex w-full items-center bg-white/30 backdrop-blur-md shadow-md">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+      <div class="flex items-center">
+        <a href="#home"><img class="w-12 h-auto cursor-pointer object-contain" src="Asset/Icon_digala.png" alt="Logo"></a>
+      </div>
+      <!-- Navbar Links -->
+      <div id="nav-menu" class="hidden md:flex flex-col md:flex-row md:items-center">
+        <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] xl:text-xl gap-4 font-semibold">
+          <li><a class="hover:text-primary" href="#home">Home</a></li>
+          <li><a class="hover:text-primary" href="#Fitur">Fitur</a></li>
+          <li><a class="hover:text-primary" href="#Katalog">Katalog</a></li>
+          <li><a class="hover:text-primary" href="#Priceles">Pricelist</a></li>
+          <li><a class="hover:text-primary" href="#FAQ">FAQ</a></li>
+          <li class="md:hidden">
+            <button class="bg-[#dc2626] text-white px-5 py-2 rounded-full hover:bg-[#9a3412] w-full">
+              <ion-icon name="logo-whatsapp" class="mr-2"></ion-icon>Whatsapp
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Hamburger Icon -->
+      <div class="flex items-center gap-6">
+        <ion-icon id="hamburger" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        <button class="hidden md:block bg-[#dc2626] text-white px-5 py-2 rounded-full hover:bg-[#9a3412]">
+          <ion-icon name="logo-whatsapp" class="mr-2"></ion-icon>Whatsapp
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-44 pb-16 bg-white relative bg-[url('/Asset/bg-prewed.png')]">
+    <div class="container">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full lg:w-1/2 self-center px-4">
+          <h1 class="text-4xl text-primary mt-1 block font-bold text-center lg:text-5xl">
+            Digala Invitation
+          </h1>
+          <h2 class="font-medium mt-4 text-slate-800 text-center text-lg mb-5 lg:text-2xl"> Solusi Untuk Segala Undangan Digital. <br>Digala Mudah, Cepat Dan Terpercaya
+          </h2>
+        </div>
+        <div class="w-full lg:w-1/2 self-end px-4 mt-8 lg:mt-0">
+          <img src="Asset/Icon_digala.png" width="500" height="500" alt="Digala Logo" class="relative mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hecro Section -->
+
+  <!-- Fitur -->
+  <section id="Fitur" class=" pt-16 pb-16 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-5 max-w-xl text-center">
+          <h2 class="mb-6 text-3xl font-semibold">Mengapa Memilih</h2>
+          <h2 class="mb-4 text-3xl font-bold sm:text-4xl lg:text-5xl text-primary">Digala</h2>
+          <p class="font-medium text-slate-500 text-center text-lg mb-5 lg:text-2xl">
+            Digala Memiliki Beberapa Fitur Di dalamnya Yaitu:</p>
+        </div>
+        <!-- Icon Blocks -->
+        <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
+            <!-- Card Google Maps -->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3 7.88304C3 6.49159 3 5.79587 3.37752 5.2721C3.75503 4.74832 4.41505 4.52832 5.73509 4.0883L9 3V19L8.26491 19.245C5.86241 20.0459 4.66116 20.4463 3.83058 19.8476C3 19.249 3 17.9828 3 15.4503V7.88304Z"
+                      stroke="black" stroke-width="null" stroke-linejoin="round" class="my-path"></path>
+                    <path d="M9 3L15 5V21L9 19V3Z" stroke="black" stroke-width="null" stroke-linejoin="round"
+                      class="my-path"></path>
+                    <path
+                      d="M15 5.00018L15.7351 4.75515C18.1376 3.95431 19.3388 3.5539 20.1694 4.15255C21 4.75119 21 6.01742 21 8.54988V16.1171C21 17.5086 21 18.2043 20.6225 18.7281C20.245 19.2519 19.5849 19.4719 18.2649 19.9119L15 21.0002V5.00018Z"
+                      stroke="black" stroke-width="null" stroke-linejoin="round" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Google Maps</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400"> Tamu Undangan Lebih Mudah Menemukan Lokasi Acara.
+              </p>
+            </div>
+            <!-- End Card Google Maps -->
+
+            <!-- Card Foto -->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4 19L7.07189 15.2455C7.69252 14.4869 8.00284 14.1076 8.40938 14.0633C8.47386 14.0563 8.53887 14.0555 8.60349 14.0611C9.01094 14.0961 9.32986 14.4682 9.9677 15.2123C10.6306 15.9857 10.962 16.3723 11.381 16.4005C11.4473 16.4049 11.5139 16.4027 11.5797 16.394C11.996 16.3387 12.3016 15.9312 12.9127 15.1164L14.4826 13.0232C15.182 12.0906 15.5317 11.6243 16.0157 11.6119C16.4996 11.5995 16.8728 12.0473 17.619 12.9428L21 17M21 17V9M21 17C21 19.2091 19.2091 21 17 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H15"
+                      stroke="black" stroke-width="null" stroke-linecap="round" class="my-path"></path>
+                    <path
+                      d="M12 9C12 10.1046 11.1046 11 10 11C8.89543 11 8 10.1046 8 9C8 7.89543 8.89543 7 10 7C11.1046 7 12 7.89543 12 9Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path d="M19 3L19 7" stroke="black" stroke-width="null" stroke-linecap="round" class="my-path">
+                    </path>
+                    <path d="M21 5H17" stroke="black" stroke-width="null" stroke-linecap="round" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Foto & Video</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400">Membagikan Foto dan video Bersama dengan resolusi tinggi.
+              </p>
+            </div>
+            <!-- End Card Foto -->
+
+            <!-- Card Music -->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21 17V6.91921C21 4.64516 21 3.50813 20.2618 2.90786C19.5236 2.30759 18.4104 2.53949 16.1842 3.00329L12.1842 3.83662C10.6591 4.15436 9.89651 4.31322 9.44826 4.86449C9 5.41576 9 6.19469 9 7.75255V19"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path d="M9 10L21 7" stroke="black" stroke-width="null" stroke-linecap="round" class="my-path">
+                    </path>
+                    <path
+                      d="M9 19C9 20.6569 7.65685 22 6 22C4.34315 22 3 20.6569 3 19C3 17.3431 4.34315 16 6 16C7.65685 16 9 17.3431 9 19Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path
+                      d="M21 17C21 18.6569 19.6569 20 18 20C16.3431 20 15 18.6569 15 17C15 15.3431 16.3431 14 18 14C19.6569 14 21 15.3431 21 17Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Backsound Music</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400">Menambahkan Music favorit Bersama sebagai Backsound
+                Undangan. </p>
+            </div>
+            <!-- End Card Music-->
+
+            <!-- Card Tamu-->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path d="M6 20.8863C6 18.1249 8.68781 16 12.0015 16C15.3152 16 18 18.1249 18 20.8863" stroke="black"
+                      stroke-width="null" class="my-path"></path>
+                    <path
+                      d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Buku Tamu</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400">Memberikan Info Undangan yang hadir dan memberikan ucapan
+                melalui Undangan.
+              </p>
+            </div>
+            <!-- End Card Tamu -->
+
+            <!-- Card  Hitung Mundur-->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 13C20 17.4183 16.4183 21 12 21C7.58172 21 4 17.4183 4 13C4 8.58172 7.58172 5 12 5C16.4183 5 20 8.58172 20 13Z"
+                      stroke="black" stroke-width="null" stroke-linejoin="round" class="my-path"></path>
+                    <path d="M12 9V13L15 16" stroke="black" stroke-width="null" stroke-linecap="round"
+                      stroke-linejoin="round" class="my-path"></path>
+                    <path d="M3 5.12132L5.10714 3" stroke="black" stroke-width="null" stroke-linecap="round"
+                      stroke-linejoin="round" class="my-path"></path>
+                    <path d="M20.9978 5.12669L18.8906 3.00537" stroke="black" stroke-width="null" stroke-linecap="round"
+                      stroke-linejoin="round" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Hitung Mundur</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400">Hitung mundur menuju hari acara untuk mengingatkan tamu
+                undangan.</p>
+            </div>
+            <!-- End Card Hitung Mundur-->
+
+            <!-- Card Gift -->
+            <div class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-neutral-900">
+              <div class="flex items-center gap-x-4 mb-3">
+                <div
+                  class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3 8C3 7.05719 3 6.58579 3.29289 6.29289C3.58579 6 4.05719 6 5 6H19C19.9428 6 20.4142 6 20.7071 6.29289C21 6.58579 21 7.05719 21 8V9C21 9.94281 21 10.4142 20.7071 10.7071C20.4142 11 19.9428 11 19 11H5C4.05719 11 3.58579 11 3.29289 10.7071C3 10.4142 3 9.94281 3 9V8Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path d="M12 6V21" stroke="black" stroke-width="null" class="my-path"></path>
+                    <path
+                      d="M5 11H19V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V11Z"
+                      stroke="black" stroke-width="null" class="my-path"></path>
+                    <path d="M12 6V4.5C12 3.67157 11.3284 3 10.5 3C9.67157 3 9 3.67157 9 4.5V6H12Z" stroke="black"
+                      stroke-width="null" class="my-path"></path>
+                    <path d="M15 6V4.5C15 3.67157 14.3284 3 13.5 3C12.6716 3 12 3.67157 12 4.5V6H15Z" stroke="black"
+                      stroke-width="null" class="my-path"></path>
+                  </svg>
+                </div>
+                <div class="shrink-0">
+                  <h3 class="block text-lg font-semibold text-gray-800 dark:text-white">Gift</h3>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-neutral-400">para tamu tetap dapat mengirimkan hadiah dengan amplop
+                digital.
+              </p>
+            </div>
+            <!-- End Card Gift -->
+          </div>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+    </div>
+  </section>
+  <!-- End Fitur -->
+
+  <!-- Katalog -->
+  <section id="Katalog" class="pt-16 pb-16 bg-slate-100">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="cardContainer">
+        <!-- Card 1 -->
+        <div class="group cursor-pointer h-[600px] transition-transform duration-300 ease-in-out"
+          onclick="document.getElementById('modal-tema4').showModal()">
+          <div class="bg-black rounded-xl overflow-hidden relative h-full">
+            <img src="Asset/bg-prewed.png" alt="Tema 4" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 flex flex-col justify-between p-6">
+              <h3 class="text-2xl font-semibold text-white">TEMA 4</h3>
+              <div class="space-y-2">
+                <h4 class="text-lg font-medium text-white">Fitur Lengkap</h4>
+                <p class="text-sm text-white/80">1-3 Foto Utama - Google Map Acara - 20 Foto Gallery - Video - Kolom
+                  Ucapan / Buku Tamu - Backsong Musik - Hitung Mundur Acara - Nama Tamu Undangan - Protokol Kesehatan -
+                  Free reschedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <dialog id="modal-tema4" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box bg-black/95 p-0 max-w-3xl">
+            <div class="relative">
+              <img src="Asset/bg-prewed.png" alt="Detail Tema 4" class="w-full h-full object-cover">
+              <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <!-- Card 2 -->
+        <div class="group cursor-pointer h-[600px] transition-transform duration-300 ease-in-out"
+          onclick="document.getElementById('modal-tema4').showModal()">
+          <div class="bg-black rounded-xl overflow-hidden relative h-full">
+            <img src="Asset/bg-prewed.png" alt="Tema 4" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 flex flex-col justify-between p-6">
+              <h3 class="text-2xl font-semibold text-white">TEMA 4</h3>
+              <div class="space-y-2">
+                <h4 class="text-lg font-medium text-white">Fitur Lengkap</h4>
+                <p class="text-sm text-white/80">1-3 Foto Utama - Google Map Acara - 20 Foto Gallery - Video - Kolom
+                  Ucapan / Buku Tamu - Backsong Musik - Hitung Mundur Acara - Nama Tamu Undangan - Protokol Kesehatan -
+                  Free reschedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <dialog id="modal-tema4" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box bg-black/95 p-0 max-w-3xl">
+            <div class="relative">
+              <img src="Asset/bg-prewed.png" alt="Detail Tema 4" class="w-full h-full object-cover">
+              <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <!-- Card 2 -->
+        <div class="group cursor-pointer h-[600px] transition-transform duration-300 ease-in-out"
+          onclick="document.getElementById('modal-tema4').showModal()">
+          <div class="bg-black rounded-xl overflow-hidden relative h-full">
+            <img src="Asset/bg-prewed.png" alt="Tema 4" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 flex flex-col justify-between p-6">
+              <h3 class="text-2xl font-semibold text-white">TEMA 4</h3>
+              <div class="space-y-2">
+                <h4 class="text-lg font-medium text-white">Fitur Lengkap</h4>
+                <p class="text-sm text-white/80">1-3 Foto Utama - Google Map Acara - 20 Foto Gallery - Video - Kolom
+                  Ucapan / Buku Tamu - Backsong Musik - Hitung Mundur Acara - Nama Tamu Undangan - Protokol Kesehatan -
+                  Free reschedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <dialog id="modal-tema4" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box bg-black/95 p-0 max-w-3xl">
+            <div class="relative">
+              <img src="Asset/bg-prewed.png" alt="Detail Tema 4" class="w-full h-full object-cover">
+              <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+        <!-- Card 2 -->
+        <div class="group cursor-pointer h-[600px] transition-transform duration-300 ease-in-out"
+          onclick="document.getElementById('modal-tema4').showModal()">
+          <div class="bg-black rounded-xl overflow-hidden relative h-full">
+            <img src="Asset/bg-prewed.png" alt="Tema 4" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 flex flex-col justify-between p-6">
+              <h3 class="text-2xl font-semibold text-white">TEMA 4</h3>
+              <div class="space-y-2">
+                <h4 class="text-lg font-medium text-white">Fitur Lengkap</h4>
+                <p class="text-sm text-white/80">1-3 Foto Utama - Google Map Acara - 20 Foto Gallery - Video - Kolom
+                  Ucapan / Buku Tamu - Backsong Musik - Hitung Mundur Acara - Nama Tamu Undangan - Protokol Kesehatan -
+                  Free reschedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <dialog id="modal-tema4" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box bg-black/95 p-0 max-w-3xl">
+            <div class="relative">
+              <img src="Asset/bg-prewed.png" alt="Detail Tema 4" class="w-full h-full object-cover">
+              <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+      </div>
+      <div class="flex justify-center mt-8">
+        <a href="#"
+          class="rounded-full border border-primary bg-primary px-6 py-3 text-center text-sm font-medium text-white hover:bg-red-800 hover:ring-1 hover:ring-red-800 focus:outline-none focus:ring active:text-red">
+          Order Sekarang
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Katalog End -->
+
+  <!-- Priceles -->
+  <section id="Priceles">
+    <div class="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-center md:gap-8">
+        <!-- Premium -->
+        <div class="rounded-2xl border  p-6 shadow-sm ring-1 0 sm:order-last sm:px-8 lg:p-12">
+          <div class="text-center">
+            <h2 class="text-lg font-medium text-gray-900">
+              Premium
+            </h2>
+
+            <p class="mt-2 sm:mt-4">
+              <strong class="text-3xl font-bold text-gray-900 sm:text-4xl"> 200 K </strong>
+            </p>
+          </div>
+
+          <ul class="mt-6 space-y-2">
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">1-3Foto Utama</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Google Maps Acara</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> 20 Foto Gallery</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Kolom Ucapan</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Music</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Hitungan Mundur</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Nama Tamu Undangan (Unlimited)</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Video</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Gift</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">Free Ganti Tanggal</span>
+            </li>
+          </ul>
+
+          <a href="#"
+            class="mt-8 block rounded-full border border-primary bg-primary px-6 py-3 text-center text-sm font-medium text-white hover:bg-red-800 hover:ring-1 hover:ring-red-800 focus:outline-none focus:ring active:text-red-500">
+            Order Sekarang 
+          </a>
+        </div>
+
+        <!-- Standar -->
+        <div class="rounded-2xl border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12">
+          <div class="text-center">
+            <h2 class="text-lg font-medium text-gray-900">
+              Standar
+            </h2>
+
+            <p class="mt-2 sm:mt-4">
+              <strong class="text-3xl font-bold text-gray-900 sm:text-4xl"> 150 K </strong>
+            </p>
+          </div>
+
+          <ul class="mt-6 space-y-2">
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> 1-2 Foto Utama </span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Google Maps Acara</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700">15 Foto Gallery</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Kolom Ucapan </span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Music </span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Hitungan Mundur</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Nama Tamu Undangan (Unlimited)</span>
+            </li>
+
+            <li class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-indigo-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+              <span class="text-gray-700"> Free Ganti Tanggal</span>
+            </li>
+          </ul>
+
+          <a href="#"
+            class="mt-8 block rounded-full border border-primary bg-primary px-6 py-3 text-center text-sm font-medium text-white hover:bg-red-800 hover:ring-1 hover:ring-red-800 focus:outline-none focus:ring active:text-red-500">
+            Order Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Preceles End -->
+
+  <!-- FAQ -->
+  <section id="FAQ">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="grid md:grid-cols-5 gap-10">
+        <div class="md:col-span-2">
+          <div class="max-w-xs">
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Frequently<br>asked questions
+            </h2>
+            <p class="mt-1 hidden md:block text-gray-600 dark:text-neutral-400">Pertanyaan Yang Sering ditanyakan.</p>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="md:col-span-3">
+          <!-- Accordion -->
+          <div class="hs-accordion-group divide-y divide-gray-200 dark:divide-neutral-700">
+            <div class="hs-accordion pb-3 active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+              <button
+                class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+                aria-expanded="true" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
+                Apakah undangan online ada masa aktifnya?
+                <svg
+                  class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                <svg
+                  class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </button>
+              <div id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region"
+                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Undangan online kamu akan aktif minimal selama 3 bulan setelah hari H acara.
+                </p>
+              </div>
+            </div>
+
+            <div class="hs-accordion pt-6 pb-3" id="hs-basic-with-title-and-arrow-stretched-heading-two">
+              <button
+                class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+                aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
+                Berapa Lama Pekerjaan di Digala?
+                <svg
+                  class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                <svg
+                  class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </button>
+              <div id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Pengerjaan undangan online sekitar 1 hari setelah data-data dilengkapi (bisa lebih cepat)
+                </p>
+              </div>
+            </div>
+
+            <div class="hs-accordion pt-6 pb-3" id="hs-basic-with-title-and-arrow-stretched-heading-three">
+              <button
+                class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+                aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three">
+                Bagaimana Caranya Menyebarkan Undangan ini?
+                <svg
+                  class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                <svg
+                  class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </button>
+              <div id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Cukup dengan copy-paste link undangan kamu di sosmed apapun seperti WhatsApp, Telegram, Instagram,
+                  Facebook, dll. (Jika diperlu kata pengantar untuk undanganmu, kami siap membuatkan untuk kamu).
+                </p>
+              </div>
+            </div>
+
+            <div class="hs-accordion pt-6 pb-3" id="hs-basic-with-title-and-arrow-stretched-heading-four">
+              <button
+                class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+                aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four">
+                Apakah Bisa Direvisi dan berapa kali batasnya?
+                <svg
+                  class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                <svg
+                  class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </button>
+              <div id="hs-basic-with-title-and-arrow-stretched-collapse-four"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Kami siap membantu revisi undangan kamu jika terjadi kesalahan data seperti nama, detail acara, hapus
+                  foto dll tanpa biaya tambahan dan tidak ada batasannya.
+                </p>
+              </div>
+            </div>
+
+            <div class="hs-accordion pt-6 pb-3" id="hs-basic-with-title-and-arrow-stretched-heading-five">
+              <button
+                class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+                aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
+                Bagaimana Cara Memesan Undangan Di Digala?
+                <svg
+                  class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                <svg
+                  class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </button>
+              <div id="hs-basic-with-title-and-arrow-stretched-collapse-five"
+                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Untuk memesan Undangan Di digala bisa menghubungi Nomor Whatsapp yang tersedia. dengan
+                  Langkah-langkah.
+                  Memesan undangan di kami sangat gampang, cukup ikuti langkah-langkah berikut ini :</p>
+                <ul class="list-disc pl-5">
+                  <li>Hubungi kami di WhatsApp</li>
+                  <li>Pilih paket yang anda mau</li>
+                  <li>Lengkapi format yang kami berikan</li>
+                  <li>Tunggu undangan selesai</li>
+                  <li>Lakukan pembayaran</li>
+                  <li>Undangan sudah siap disebar :)</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <!-- End Accordion -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+    </div>
+  </section>
+  <!-- End FAQ -->
+
+  <!-- Footer -->
+  <section>
+    <footer class="footer footer-center bg-slate-600 text-primary-content p-10">
+      <aside>
+        <img src="Asset/Icon_digala.png" width="50" height="50" alt="">
+        <p class="font-bold">
+          Digala Invitation.
+          <br />
+          Providing reliable tech since 2024
+        </p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </section>
+  <!-- End Footer -->
+  <script src="src/main.js"></script>
+</body>
+
+</html>
